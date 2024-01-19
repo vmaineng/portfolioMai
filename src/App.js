@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
+import { Home } from "./components/Home";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 
@@ -11,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <Banner />
+        <Home />
         <Projects />
         <Footer />
       </div>
