@@ -13,7 +13,8 @@ export const Home = () => {
                         <span className="name">{myName}</span>
                         <h1> Software Engineer </h1> 
                         <p> 
-                            SWE
+                        Mai is an enthuastic, creative, and driven Software Engineer specializing in converting technical designs to a user experience
+             with a background in Finance. Strong passion for web technologies and web development, digital and personal empathy, and excellent communication skills.
                         </p>
                     </Col>
                     {/* <Col xs={12} md={6} xl={5}>

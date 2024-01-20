@@ -4,7 +4,7 @@ import { Button, Card, Col } from "react-bootstrap"
 export const ProjectCard = ({title,imgURL,stack,description,github,demo}) => {
   return (
     <div>
-          <Col size={12} sm={8} md={6} >
+          <Col size={20} sm={8} md={6} >
             <Card className="proj-imgbx">
                 <Card.Img variant="top" style={{ height: '20rem' }} src={imgURL} alt="{title}"/>
                     <div className="proj-txt">
