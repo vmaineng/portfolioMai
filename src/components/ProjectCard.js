@@ -11,7 +11,7 @@ export const ProjectCard = ({title,imgURL,stack,description,github,demo}) => {
                         <h4> {title}</h4>
                         <h5>{description}</h5>
                         <span> {stack} </span>
-                        <div></div>
+                        
                         <Card.Body>
                         <Button href={github} target="_blank" rel="noreferrer">Github</Button>{" "}
                         {demo && 

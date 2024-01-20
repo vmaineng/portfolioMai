@@ -4,27 +4,41 @@
   padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 
 body {
-  font-weight: 100;
+  font-weight: 400;
   overflow-x: hidden;
   position: relative;
   background-color: #0b3383 !important;
   color: white !important;
 }
-.container {
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+@media (min-width:1700px) {
+	main .container {
 		max-width: 100%;
+		padding: 0 150px;
 	}
+}
 
 
 /* -------------------------------- Navbar -------------------------------- */
 nav.navbar {
   padding: 18px 0;
   position: fixed;
-  align-items: center;
   width: 100%;
   top: 0;
   z-index: 9999;
+  transition:  0.32s ease-in-out;
 }
 
 /* works for the toggle */
@@ -51,7 +65,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
-    gap: 47px;
 }
 
 span.name{
@@ -110,7 +123,7 @@ span.name{
 	    position: relative;
 	    background-color: transparent;
 	    transition: 0.3s ease-in-out;
-  border-radius: .5rem;
+
 }
 .navbar-text button span {
   z-index: 1;
@@ -127,7 +140,7 @@ span.name{
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #8c0909;
+  color: #a16f6f;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -224,13 +237,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Banner text content ---------------------- */
 .banner h1 {
-  font-size: 45px;
+  font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
-  text-align: center;
+  /* text-align: center; */
 }
 .banner h2 {
   font-size: 30px;
@@ -239,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 0px;
   display: block;
-  text-align: center;
+  /* text-align: center; */
 }
 .banner p {
   color: #f4f4f4;
@@ -247,21 +260,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 100%;
-}
-
-#animated {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
 }
 
 /* --------------------------------  Projects --------------------------------  */
@@ -289,12 +287,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* hover background --------------------------------  */
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #5d42d6 -5.91%, #081354 111.58%);
+  background: linear-gradient(90.21deg, #929bcf -5.91%, #5d42d6 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
   height: 0;
-  transition: 0.4s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .proj-imgbx:hover::before {
   height: 100%;
@@ -337,14 +335,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* -------------------------------- Footer -------------------------------- */
 .footer {
- background-color: #5908b5;
+ background-color: #0b3383;
  padding: 25px 50px 10px;
  text-align: center;
  align-items: center ;
 }
 
 .footer p{
-  color:rgb(85, 224, 255);
+  color:rgb(204, 135, 236);
   font-weight: 100;
   font-size: 12px;
   padding-top: 10px;
@@ -371,11 +369,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-@keyframes animate {
-  0%{
-    background-position: left 0px top 10px;
-  }
-  40%{
-    background-position: left 800px top 10px;
-}
-}
