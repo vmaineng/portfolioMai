@@ -6,14 +6,16 @@ import logo from '../assets/nav/fav1.png'
 
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home')
+    const [activeLink, setActiveLink] = useState('home');
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
   return (
-    <div>
-        <Navbar expand="lg" >
+
+  
+
+        <Navbar expand="lg">
                 <Container>
                     <Navbar.Brand href="/">
                         <img src={logo} alt='Logo' /> 
@@ -36,6 +38,6 @@ export const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+  
   )
 }
