@@ -1,5 +1,4 @@
 import { Button, Card, Col } from "react-bootstrap"
-import hanawilo from '../assets/projectAsset/hanawilo.png'
 
 
 export const ProjectCard = ({title,imgURL,stack,description,github,demo}) => {
