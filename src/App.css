@@ -73,6 +73,13 @@ span.name{
   text-decoration: none;
 }
 
+.selfPortrait {
+width: 50vh;
+height: 50vh;
+background-size: 100% 100%;
+border: 1px solid red;
+}
+
 /* socials icons -------------------------------- */
 .social-icon {
     display: inline-block;

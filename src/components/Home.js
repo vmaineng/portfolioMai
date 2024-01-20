@@ -19,7 +19,7 @@ export const Home = () => {
                         </p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                      <img src= {selfPortrait} alt="selfPortrait" />
+                      <img src= {selfPortrait} alt="selfPortrait" class="selfPortrait"/>
                     </Col>
                 </Row>
             </Container>
