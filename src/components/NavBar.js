@@ -7,6 +7,21 @@ import logo from '../assets/nav/fav1.png'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        }
+
+        window.addEventListener("scroll", onScroll);
+
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [])
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
@@ -15,7 +30,7 @@ export const NavBar = () => {
 
   
 
-        <Navbar expand="lg">
+        <Navbar expand="lg" className = {scrolled ? "scrolled": ""}>
                 <Container>
                     <Navbar.Brand href="/">
                         <img src={logo} alt='Logo' /> 
