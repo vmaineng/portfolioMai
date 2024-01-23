@@ -4,13 +4,13 @@ import githubIcon from "../assets/nav/github.png";
 import linkedinIcon from "../assets/nav/linkedIn.png";
 
 export const Footer = () => {
-    const name = "{ Mai Vang }"
+    const name = "Mai Vang"
   return (
     <div>
       <footer className="footer">
         <Container>
           <Row className="align-items-center">
-            <Col size={12} sm={6} className="text-start text-sm-end">
+            <Col size={12} sm={6} className="text-center text-sm-end">
               <h6 className="name">{name}</h6>
             </Col>
             <Col size={12} sm={6} className="text-center text-sm-end">

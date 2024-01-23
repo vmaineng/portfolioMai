@@ -26,7 +26,7 @@ export const NavBar = () => {
     setActiveLink(value);
   };
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="lg" className={scrolled ? "scrolled" : ""} id="nav">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="logo" id="logoBanner"/>
@@ -36,7 +36,7 @@ export const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="me-auto">
             <Nav.Link
               href="#home"
               className={
@@ -66,7 +66,7 @@ export const NavBar = () => {
                 <img src={linkedinIcon} alt="LinkedIn" />
               </a>
               <a
-                href="https://github.com/vmaineng"
+                href="https://github.com/vmaineng" 
                 target="_blank"
                 rel="noreferrer"
               >
