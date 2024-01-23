@@ -6,7 +6,7 @@ export const ProjectCard = ({title,imgURL,stack,description,github,demo}) => {
     <div>
           <Col size={20} sm={8} md={6} >
             <Card className="proj-imgbx">
-                <Card.Img variant="top" style={{ height: '20rem' }} src={imgURL} alt="{title}"/>
+                <Card.Img style={{ height: '25rem'}} src={imgURL} alt="{title}"/>
                     <div className="proj-txt">
                         <h4> {title}</h4>
                         <h5>{description}</h5>

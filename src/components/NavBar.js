@@ -32,9 +32,9 @@ export const NavBar = () => {
           <img src={logo} alt="logo" id="logoBanner"/>
           <span className="name"> Mai Vang - SWE </span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+        </Navbar.Toggle> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
