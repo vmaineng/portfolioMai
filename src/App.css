@@ -13,28 +13,19 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #0b3383 !important;
-  color: white !important;
+  background-color: #0b3383;
+  color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif !important;
+    "Lucida Sans", Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
 
-p,
-a,
-li,
-button,
-ul {
+p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -53,7 +44,7 @@ ul {
   padding: 20px 0;
   position: fixed;
   top: 0;
-  transition: 0.32s ease-in-out;
+  transition: 0.30s ease-in-out;
   width: 100%;
   z-index: 9999;
 }
@@ -75,14 +66,15 @@ nav.navbar a.navbar-brand {
   letter-spacing: 1px;
 }
 
-nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #fff !important;
-  letter-spacing: 0.8px;
+.navbar-link {
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
 }
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
@@ -94,8 +86,8 @@ span.navbar-text {
 
 span.name {
   font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
+  font-weight: 800;
+  text-decoration: solid underline purple 4px;
 }
 
 .selfPortrait {
@@ -292,15 +284,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 /* Banner text content ---------------------- */
@@ -348,7 +340,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 25px;
- 
 }
 
 /* hover background --------------------------------  */
