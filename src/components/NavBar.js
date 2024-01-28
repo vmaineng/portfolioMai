@@ -26,15 +26,15 @@ export const NavBar = () => {
     setActiveLink(value);
   };
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""} id="nav">
+    <Navbar expand="lg" className={scrolled ? "scrolled" : ""} >
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="logo" id="logoBanner"/>
           <span className="name"> Mai Vang - SWE </span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+        </Navbar.Toggle> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
