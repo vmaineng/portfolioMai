@@ -32,7 +32,7 @@ p, a, li, button, ul {
   text-decoration: none;
 }
 
-@media all and (min-width: 1700px) {
+@media all and (min-width: 1200px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -40,12 +40,17 @@ p, a, li, button, ul {
 }
 
 /* -------------------------------- Navbar -------------------------------- */
+.container {
+  display: flex;
+}
+
 nav.navbar {
   padding: 20px 0;
   position: fixed;
-  transition: 0.30s ease-in-out;
   width: 100%;
+  top: 0;
   z-index: 9999;
+  transition: 0.30s ease-in-out;
 }
 
 nav.navbar.scrolled {
@@ -58,11 +63,12 @@ nav.navbar.scrolled {
 
 /* works for the toggle */
 nav.navbar a.navbar-brand {
-  width: 95%;
+  align-items: center;
+  width: 30%;
   color: #fff;
   display: inline-flex;
   align-items: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
 }
 
 nav.navbar #basic-navbar-nav {
@@ -70,11 +76,12 @@ nav.navbar #basic-navbar-nav {
   align-items: center;
 }
 
-.navbar-link {
-  font-weight: 500;
-  color: #fff;
-  letter-spacing: 1px;
-  padding: 0 25px;
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0px 25px;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -82,12 +89,6 @@ nav.navbar #basic-navbar-nav {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
-}
-
-span.navbar-text {
-  display: flex;
-  align-items: center;
-  /* flex-direction: row-reverse; */
 }
 
 span.name {
