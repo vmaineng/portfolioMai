@@ -9,7 +9,7 @@ export const Home = () => {
       <section className="banner" id="home">
         <Container className="container">
           <Row className="aligh-items-center">
-            <Col class="column1">
+            <Col>
               <h2> Hello there :) </h2>
               <span className="name">{myName}</span>
               <h1> Software Engineer </h1>
@@ -20,7 +20,7 @@ export const Home = () => {
                 personal empathy, and excellent communication skills.
               </p>
             </Col>
-            <Col class="column2">
+            <Col>
               <img src={selfPortrait} alt="selfPortrait" class="selfPortrait" />
             </Col>
           </Row>

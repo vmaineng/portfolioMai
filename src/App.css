@@ -242,6 +242,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 9997;
+  transition: all 0.5s;
 }
 
 .banner .container {
@@ -264,44 +266,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   -webkit-background-clip: text;
   animation: animate 80s linear infinite;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 900;
 }
 
-.banner .column1 {
-  flex: 1;
-  padding: 20px;
-}
-
-.banner .column2 {
-  flex: 1;
-  padding: 20px;
-}
-
-/* .banner .info {
-  letter-spacing: 0.8px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  display: block;
-  background-color: #f9d1d1;
-  -webkit-background-clip: text;
-  text-align: left;
-} */
-
-#animated {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
+@keyframes animate {
+  0%{
+    background-position: left 0px top 10px;
   }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
+  40%{
+    background-position: left 800px top 10px;
+}
 }
 
 /* Banner text content ---------------------- */
@@ -312,7 +288,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
-  /* text-align: center; */
+  text-align: center;
 }
 .banner h2 {
   font-size: 30px;
@@ -321,7 +297,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 0px;
   display: block;
-  /* text-align: center; */
+  text-align: center;
 }
 .banner p {
   color: #f4f4f4;
@@ -329,6 +305,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 100%;
+  align-items: center;
+  
+}
+
+.banner img {
+  margin: 15px auto;
+  display: block;
+  width: 80%;
+  height: 80%;
+  border: 8px solid #2c2f3f;
+}
+
+#animated {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 /* --------------------------------  Projects --------------------------------  */
