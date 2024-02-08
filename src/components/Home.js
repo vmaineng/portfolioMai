@@ -7,9 +7,9 @@ export const Home = () => {
   return (
     <div>
       <section className="banner" id="home">
-        <Container className="container">
-          <Row className="aligh-items-center">
-            <Col>
+        <Container >
+          <Row>
+            <Col xs={12} md={6} xl={7}>
               <h2> Hello there :) </h2>
               <span className="name">{myName}</span>
               <h1> Software Engineer </h1>
@@ -20,8 +20,8 @@ export const Home = () => {
                 personal empathy, and excellent communication skills.
               </p>
             </Col>
-            <Col>
-              <img src={selfPortrait} alt="selfPortrait" class="selfPortrait" />
+            <Col xs={12} md={6} xl={5}>
+              <img src={selfPortrait} alt="selfPortrait" />
             </Col>
           </Row>
         </Container>
